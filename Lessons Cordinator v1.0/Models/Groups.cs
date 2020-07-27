@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 namespace Lessons_Cordinator_v1._0.Models {
 
     enum Day{
-        السبت,الاحد,الاثنين,الثلاثاء,الاربع,الخميس,الجمعه
+        السبت_و_الثلاثاء,
+        الاحد_و_الاربعاء,
+        الاثنين_و_الخميس
     }
     public enum Gender {
         اولاد,

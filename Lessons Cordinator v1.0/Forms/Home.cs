@@ -1,5 +1,4 @@
-﻿using Lessons_Cordinator_v1._0.Forms;
-using Lessons_Cordinator_v1._0.Models;
+﻿using Lessons_Cordinator_v1._0.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,6 +14,8 @@ namespace Lessons_Cordinator_v1._0 {
     public partial class Home : Form {
         DataContext data = new DataContext();
         Student editableStudent = new Student();
+        Groups editableGroup = new Groups();
+
         public Home() {
 
             InitializeComponent();
@@ -23,6 +25,15 @@ namespace Lessons_Cordinator_v1._0 {
 
             foreach (Models.Day d in Enum.GetValues(typeof(Models.Day))) {
                 comboBoxDay.Items.Add(d);
+            }
+            foreach (Models.Day d in Enum.GetValues(typeof(Models.Day))) {
+                comboBoxEditGroupDay.Items.Add(d);
+            }
+            foreach (var g in data.groups.ToList()) {
+                comboBoxsSearchByGroup.Items.Add(g.ToString());
+            }
+            foreach (var g in data.groups.ToList()) {
+                comboBoxAbsentGroup.Items.Add(g.ToString());
             }
             foreach (Gender d in Enum.GetValues(typeof(Gender))) {
                 genderCombo.Items.Add(d);
@@ -60,7 +71,7 @@ namespace Lessons_Cordinator_v1._0 {
             List<Groups> _groups = data.groups.ToList();
             foreach (Groups g in _groups)
                 groupsGridView.Rows.Add(g.day.ToString(), g.hour.ToString() + ":" + g.minutes.ToString(),
-                    g.gender.ToString() , data.students.Count(st => st.groupID == g.ID));
+                    g.gender.ToString() , data.students.Count(st => st.groupID == g.ID) ,"تعديل" , "حذف" );
 
             bool color = true;
             foreach (DataGridViewRow row in groupsGridView.Rows) {
@@ -108,7 +119,7 @@ namespace Lessons_Cordinator_v1._0 {
             Student stu = new Student {
                 name = nameBox.Text,
                 address = addressBox.Text,
-                age = int.Parse(ageBox.Text),
+                whatsAppNumber = whatsAppBox.Text,
                 phone1 = phone1Box.Text,
                 phone2 = phone2Box.Text,
                 school = schoolBox.Text,
@@ -141,25 +152,7 @@ namespace Lessons_Cordinator_v1._0 {
         }
 
         private void absenceBtn_Click(object sender, EventArgs e) {
-            tabControl.SelectedIndex = 4;
-            ListBoxAbsence.Items.Clear();
-            comboBoxGroups.Items.Clear();
-
-            foreach (Groups group in data.groups.ToList()) {
-                string groupName = group.gender.ToString() + "  " + group.day.ToString();
-                groupName += "  " + group.hour.ToString() + ":" + group.minutes.ToString();
-                comboBoxGroups.Items.Add(groupName);
-            }
-        }
-
-        private void comboBoxGroups_SelectedIndexChanged(object sender, EventArgs e) {
-            ListBoxAbsence.Items.Clear();
-
-            Groups group = data.groups.ToList()[comboBoxGroups.SelectedIndex];
-
-            List<Student> list = data.students.Where(m => m.groupID == group.ID).ToList();
-            foreach (Student stu in list) 
-                ListBoxAbsence.Items.Add(stu.name);
+            tabControl.SelectedIndex = 7;
         }
         
         private void groupCombo_SelectedIndexChanged(object sender, EventArgs e) {
@@ -181,9 +174,9 @@ namespace Lessons_Cordinator_v1._0 {
             editableStudent = stu;
 
             if (row == 6) {
-                tabControl.SelectedIndex = 5;
+                tabControl.SelectedIndex = 4;
                 textBoxStuName.Text = stu.name;
-                textBoxStuAge.Text = stu.age.ToString();
+                textBoxStuWhatsNumber.Text = stu.whatsAppNumber;
                 textBoxStuAddress.Text = stu.address;
                 textBoxStuFatherPhone.Text = stu.phone2;
                 textBoxStuPhone.Text = stu.phone1;
@@ -202,7 +195,7 @@ namespace Lessons_Cordinator_v1._0 {
                 data.SaveChanges();
             }
             else if (row == 5) {
-                tabControl.SelectedIndex = 6;
+                tabControl.SelectedIndex = 5;
                 dataGridViewStudentRecord.Rows.Clear();
                 foreach (var rec in data.dayInfoList.Where(inf => inf.studentID == stu.ID).ToList()) {
 
@@ -211,6 +204,14 @@ namespace Lessons_Cordinator_v1._0 {
                     dataGridViewStudentRecord.Rows.Add(date,rec.mark,rec.absent==true?"حاضر":"غائب",rec.note);
                 }
             }
+            else if(row == 7) {
+                data.students.Remove(stu);
+                data.SaveChanges();
+
+                gridViewStudents.Rows.Clear();
+                getStudents(textBoxStudentsSearch.Text);
+
+            }
         }
 
         private void btnStuSavetData_Click(object sender, EventArgs e) {
@@ -218,7 +219,7 @@ namespace Lessons_Cordinator_v1._0 {
             Student stu = editableStudent;
 
             stu.name = textBoxStuName.Text;
-            stu.age = int.Parse(textBoxStuAge.Text);
+            stu.whatsAppNumber = textBoxStuWhatsNumber.Text;
             stu.address = textBoxStuAddress.Text;
             stu.phone2 = textBoxStuFatherPhone.Text;
             stu.phone1 = textBoxStuPhone.Text;
@@ -234,10 +235,97 @@ namespace Lessons_Cordinator_v1._0 {
                     data.students.ToList()[0].absence.Clear();
         }
 
-        private void ListBoxAbsence_SelectedIndexChanged_1(object sender, EventArgs e) {
-            Groups group = data.groups.ToList()[comboBoxGroups.SelectedIndex];
-            List<Student> list = data.students.Where(m => m.groupID == group.ID).ToList();
-            new Day_Info((list[ListBoxAbsence.SelectedIndex].ID) , dateTimePicker1.Value).ShowDialog();
+        private void gridViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
+
+        private void groupsGridView_CellClick(object sender, DataGridViewCellEventArgs e) {
+            int row = e.RowIndex, col = e.ColumnIndex;
+
+            if(col == 5) {
+
+                data.groups.Remove(data.groups.ToList()[row]);
+                data.SaveChanges();
+
+                groupsBtn_Click(sender, e);
+
+            }
+            if(col == 4) {
+
+                editableGroup = data.groups.ToList()[row];
+
+                textBoxEditGroupHour.Text = editableGroup.hour.ToString();  
+                textBoxEditGroupMinutes.Text = editableGroup.minutes.ToString();  
+                comboBoxEditGroupDay.Text = editableGroup.day.ToString();
+
+                tabControl.SelectedIndex = 6;
+            }
+        }
+
+        private void groupsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
+
+        private void buttonEditGroupSave_Click(object sender, EventArgs e) {
+            editableGroup.hour = int.Parse(textBoxEditGroupHour.Text);
+            editableGroup.minutes = int.Parse(textBoxEditGroupMinutes.Text);
+            editableGroup.day = (Models.Day)Enum.Parse(typeof(Models.Day), comboBoxEditGroupDay.Text);
+
+        }
+
+        private void comboBoxsSearchByGroup_SelectedIndexChanged(object sender, EventArgs e) {
+            Groups group = data.groups.ToList()[comboBoxsSearchByGroup.SelectedIndex];
+            
+            gridViewStudents.Rows.Clear();
+            List<Student> Students = data.students.Where(st => st.groupID == group.ID).ToList();
+
+            foreach (Student st in Students) {
+
+                if (st.absence == null) {
+                    st.absence = new List<absencePair>();
+                    st.absence.Add(new absencePair() { absent = true, date = DateTime.Now });
+                }
+                var info = data.dayInfoList.ToList();
+
+                gridViewStudents.Rows.Add(st.name, st.phone1, st.phone2,
+                    group.ToString(),info.Count(inf => inf.studentID == st.ID && inf.absent == false),
+                    "معلومات", "تعديل");
+            }
+            bool color = true;
+            foreach (DataGridViewRow row in gridViewStudents.Rows) {
+                if (color) row.DefaultCellStyle.BackColor = Color.LightGray;
+                else row.DefaultCellStyle.BackColor = Color.LightBlue;
+                color = !color;
+            }
+        }
+
+        private void comboBoxAbsentGroup_SelectedIndexChanged(object sender, EventArgs e) {
+            Groups group = data.groups.ToList()[comboBoxAbsentGroup.SelectedIndex];
+
+            dataGridViewAbsent.Rows.Clear();
+            List<Student> stus = data.students.Where(st => st.groupID == group.ID).ToList();
+            foreach (var st in stus) {
+                dataGridViewAbsent.Rows.Add(st.name,"-1");
+            }
+        }
+
+        private void buttonAbsentSave_Click_1(object sender, EventArgs e) {
+            Groups group = data.groups.ToList()[comboBoxAbsentGroup.SelectedIndex];
+            List<Student> stus = data.students.Where(st => st.groupID == group.ID).ToList();
+
+            for(int i = 0; i < dataGridViewAbsent.Rows.Count; i++) {
+                
+                dayInformation info = new dayInformation();
+                info.date = dateTimePickerAbsent.Value;
+                info.mark = int.Parse(dataGridViewAbsent[1, i].Value.ToString());
+                info.note = dataGridViewAbsent[3, i].Value.ToString();
+                info.absent = !bool.Parse(dataGridViewAbsent[2, i].Value.ToString());
+                info.studentID = stus[i].ID;
+
+                data.dayInfoList.Add(info);
+                data.SaveChanges();
+            }
+
         }
     }
 }

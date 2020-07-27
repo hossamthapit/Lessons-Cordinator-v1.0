@@ -20,7 +20,7 @@ namespace Lessons_Cordinator_v1._0 {
         public string name { get; set; }
         public string phone1 { get; set; }
         public string phone2 { get; set; }
-        public int age { get; set; }
+        public string whatsAppNumber { get; set; }
         public int groupID { get; set; }
         public string school { get; set; }
         public string address { get; set; }
@@ -35,10 +35,10 @@ namespace Lessons_Cordinator_v1._0 {
             this.school = school;
             this.gender = gender;
         }
-        public Student(string name,string phone1,int groupID, string school, Gender gender ,string phone2 , int age , string address) 
+        public Student(string name,string phone1,int groupID, string school, Gender gender ,string phone2 , string whatsapp , string address) 
             : this(name, phone1, groupID, school,gender) {
             this.phone2 = phone2;
-            this.age = age;
+            this.whatsAppNumber = whatsapp;
             this.address = address;
         }
     }
