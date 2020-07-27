@@ -11,6 +11,8 @@ namespace Lessons_Cordinator_v1._0 {
     struct absencePair {
         public DateTime date;
         public bool absent;
+        public double mark;
+        public string note ;
     }
     class Student {
         [Key]

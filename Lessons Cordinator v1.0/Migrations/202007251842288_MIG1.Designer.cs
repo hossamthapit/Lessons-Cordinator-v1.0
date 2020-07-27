@@ -7,13 +7,13 @@ namespace Lessons_Cordinator_v1._0.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MIG2 : IMigrationMetadata
+    public sealed partial class MIG1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MIG2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MIG1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202002290234363_MIG2"; }
+            get { return "202007251842288_MIG1"; }
         }
         
         string IMigrationMetadata.Source

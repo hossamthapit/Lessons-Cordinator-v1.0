@@ -13,5 +13,6 @@ namespace Lessons_Cordinator_v1._0 {
         }
         public DbSet<Student> students { get; set; }
         public DbSet<Groups> groups { get; set; }
+        public DbSet<dayInformation> dayInfoList { get; set; }
     }
 }

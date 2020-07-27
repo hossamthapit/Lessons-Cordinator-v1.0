@@ -24,22 +24,27 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
             this.addStudentBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.studentsBtn = new System.Windows.Forms.Button();
             this.groupsBtn = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.addGroupBtn = new System.Windows.Forms.Button();
-            this.marksBtn = new System.Windows.Forms.Button();
             this.absenceBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -70,26 +75,50 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.students = new System.Windows.Forms.TabPage();
+            this.textBoxStudentsSearch = new System.Windows.Forms.TextBox();
+            this.btnStudentsSearch = new System.Windows.Forms.Button();
             this.gridViewStudents = new System.Windows.Forms.DataGridView();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.group = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Absencee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groups = new System.Windows.Forms.TabPage();
             this.groupsGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.saveAbsence = new System.Windows.Forms.Button();
-            this.ListBoxAbsence = new System.Windows.Forms.CheckedListBox();
+            this.ListBoxAbsence = new System.Windows.Forms.ListBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBoxGroups = new System.Windows.Forms.ComboBox();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.school = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.group = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.absen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.student = new System.Windows.Forms.TabPage();
+            this.btnStuSavetData = new System.Windows.Forms.Button();
+            this.comboBoxStuGroup = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxStuAddress = new System.Windows.Forms.TextBox();
+            this.textBoxStuAge = new System.Windows.Forms.TextBox();
+            this.textBoxStuSchool = new System.Windows.Forms.TextBox();
+            this.textBoxStuFatherPhone = new System.Windows.Forms.TextBox();
+            this.textBoxStuPhone = new System.Windows.Forms.TextBox();
+            this.textBoxStuName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.studendRecord = new System.Windows.Forms.TabPage();
+            this.dataGridViewStudentRecord = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
@@ -101,6 +130,9 @@
             this.groups.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupsGridView)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.student.SuspendLayout();
+            this.studendRecord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentRecord)).BeginInit();
             this.SuspendLayout();
             // 
             // addStudentBtn
@@ -195,22 +227,6 @@
             this.addGroupBtn.UseVisualStyleBackColor = false;
             this.addGroupBtn.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // marksBtn
-            // 
-            this.marksBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.marksBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.marksBtn.FlatAppearance.BorderSize = 2;
-            this.marksBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.marksBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.marksBtn.ForeColor = System.Drawing.Color.White;
-            this.marksBtn.Location = new System.Drawing.Point(776, 514);
-            this.marksBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.marksBtn.Name = "marksBtn";
-            this.marksBtn.Size = new System.Drawing.Size(216, 55);
-            this.marksBtn.TabIndex = 10;
-            this.marksBtn.Text = "الدرجات";
-            this.marksBtn.UseVisualStyleBackColor = false;
-            // 
             // absenceBtn
             // 
             this.absenceBtn.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -224,7 +240,7 @@
             this.absenceBtn.Name = "absenceBtn";
             this.absenceBtn.Size = new System.Drawing.Size(216, 55);
             this.absenceBtn.TabIndex = 8;
-            this.absenceBtn.Text = "الغياب";
+            this.absenceBtn.Text = "الغياب / الدرجات";
             this.absenceBtn.UseVisualStyleBackColor = false;
             this.absenceBtn.Click += new System.EventHandler(this.absenceBtn_Click);
             // 
@@ -245,6 +261,8 @@
             this.tabControl.Controls.Add(this.students);
             this.tabControl.Controls.Add(this.groups);
             this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Controls.Add(this.student);
+            this.tabControl.Controls.Add(this.studendRecord);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl.Multiline = true;
@@ -591,6 +609,8 @@
             // 
             // students
             // 
+            this.students.Controls.Add(this.textBoxStudentsSearch);
+            this.students.Controls.Add(this.btnStudentsSearch);
             this.students.Controls.Add(this.gridViewStudents);
             this.students.Location = new System.Drawing.Point(4, 25);
             this.students.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -602,51 +622,133 @@
             this.students.UseVisualStyleBackColor = true;
             this.students.Click += new System.EventHandler(this.students_Click);
             // 
+            // textBoxStudentsSearch
+            // 
+            this.textBoxStudentsSearch.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.textBoxStudentsSearch.Location = new System.Drawing.Point(269, 40);
+            this.textBoxStudentsSearch.Name = "textBoxStudentsSearch";
+            this.textBoxStudentsSearch.Size = new System.Drawing.Size(263, 32);
+            this.textBoxStudentsSearch.TabIndex = 3;
+            // 
+            // btnStudentsSearch
+            // 
+            this.btnStudentsSearch.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnStudentsSearch.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.btnStudentsSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnStudentsSearch.Location = new System.Drawing.Point(205, 40);
+            this.btnStudentsSearch.Name = "btnStudentsSearch";
+            this.btnStudentsSearch.Size = new System.Drawing.Size(58, 31);
+            this.btnStudentsSearch.TabIndex = 2;
+            this.btnStudentsSearch.Text = "بحث";
+            this.btnStudentsSearch.UseVisualStyleBackColor = false;
+            this.btnStudentsSearch.Click += new System.EventHandler(this.btnStudentsSearch_Click);
+            // 
             // gridViewStudents
             // 
             this.gridViewStudents.AllowUserToAddRows = false;
             this.gridViewStudents.AllowUserToDeleteRows = false;
             this.gridViewStudents.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gridViewStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gridViewStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
             this.gridViewStudents.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle62.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
             this.gridViewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
-            this.age,
-            this.school,
             this.Phone1,
             this.Phone2,
             this.group,
-            this.absen});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewStudents.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Absencee,
+            this.info,
+            this.edit});
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewStudents.DefaultCellStyle = dataGridViewCellStyle63;
             this.gridViewStudents.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gridViewStudents.Location = new System.Drawing.Point(3, 0);
+            this.gridViewStudents.Location = new System.Drawing.Point(3, 97);
             this.gridViewStudents.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridViewStudents.Name = "gridViewStudents";
             this.gridViewStudents.ReadOnly = true;
             this.gridViewStudents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridViewStudents.RowHeadersVisible = false;
             this.gridViewStudents.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gridViewStudents.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.gridViewStudents.Size = new System.Drawing.Size(738, 629);
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gridViewStudents.RowsDefaultCellStyle = dataGridViewCellStyle64;
+            this.gridViewStudents.Size = new System.Drawing.Size(738, 532);
             this.gridViewStudents.TabIndex = 1;
+            this.gridViewStudents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewStudents_CellClick);
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.FillWeight = 177.665F;
+            this.name.HeaderText = "الاسم";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // Phone1
+            // 
+            this.Phone1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Phone1.FillWeight = 77.86063F;
+            this.Phone1.HeaderText = "التليفون";
+            this.Phone1.MinimumWidth = 6;
+            this.Phone1.Name = "Phone1";
+            this.Phone1.ReadOnly = true;
+            // 
+            // Phone2
+            // 
+            this.Phone2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Phone2.FillWeight = 83.55789F;
+            this.Phone2.HeaderText = "تليفون الوالد";
+            this.Phone2.MinimumWidth = 6;
+            this.Phone2.Name = "Phone2";
+            this.Phone2.ReadOnly = true;
+            // 
+            // group
+            // 
+            this.group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.group.FillWeight = 149.8589F;
+            this.group.HeaderText = "المجموعه";
+            this.group.MinimumWidth = 6;
+            this.group.Name = "group";
+            this.group.ReadOnly = true;
+            // 
+            // Absencee
+            // 
+            this.Absencee.HeaderText = "غ";
+            this.Absencee.MinimumWidth = 6;
+            this.Absencee.Name = "Absencee";
+            this.Absencee.ReadOnly = true;
+            this.Absencee.Width = 30;
+            // 
+            // info
+            // 
+            this.info.HeaderText = "معلومات";
+            this.info.MinimumWidth = 6;
+            this.info.Name = "info";
+            this.info.ReadOnly = true;
+            this.info.Width = 50;
+            // 
+            // edit
+            // 
+            this.edit.HeaderText = "تعديل";
+            this.edit.MinimumWidth = 6;
+            this.edit.Name = "edit";
+            this.edit.ReadOnly = true;
+            this.edit.Width = 40;
             // 
             // groups
             // 
@@ -667,48 +769,49 @@
             this.groupsGridView.AllowUserToOrderColumns = true;
             this.groupsGridView.AllowUserToResizeColumns = false;
             this.groupsGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.groupsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.groupsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle65;
             this.groupsGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.groupsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.groupsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle66;
             this.groupsGridView.ColumnHeadersHeight = 29;
             this.groupsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.groupsGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn3,
+            this.groupCount});
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle68.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle68.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.groupsGridView.DefaultCellStyle = dataGridViewCellStyle68;
             this.groupsGridView.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupsGridView.Location = new System.Drawing.Point(3, 4);
             this.groupsGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupsGridView.Name = "groupsGridView";
             this.groupsGridView.ReadOnly = true;
             this.groupsGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.groupsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle69.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.groupsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle69;
             this.groupsGridView.RowHeadersVisible = false;
             this.groupsGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.groupsGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.groupsGridView.RowsDefaultCellStyle = dataGridViewCellStyle70;
             this.groupsGridView.Size = new System.Drawing.Size(738, 625);
             this.groupsGridView.TabIndex = 2;
             // 
@@ -736,9 +839,18 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
+            // groupCount
+            // 
+            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.groupCount.DefaultCellStyle = dataGridViewCellStyle67;
+            this.groupCount.HeaderText = "العدد";
+            this.groupCount.MinimumWidth = 6;
+            this.groupCount.Name = "groupCount";
+            this.groupCount.ReadOnly = true;
+            this.groupCount.Width = 60;
+            // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.saveAbsence);
             this.tabPage1.Controls.Add(this.ListBoxAbsence);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label12);
@@ -748,36 +860,23 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabPage1.Size = new System.Drawing.Size(747, 636);
             this.tabPage1.TabIndex = 4;
             this.tabPage1.Text = "الغياب";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // saveAbsence
-            // 
-            this.saveAbsence.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.saveAbsence.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.saveAbsence.FlatAppearance.BorderSize = 2;
-            this.saveAbsence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveAbsence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveAbsence.ForeColor = System.Drawing.Color.White;
-            this.saveAbsence.Location = new System.Drawing.Point(9, 564);
-            this.saveAbsence.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.saveAbsence.Name = "saveAbsence";
-            this.saveAbsence.Size = new System.Drawing.Size(187, 55);
-            this.saveAbsence.TabIndex = 13;
-            this.saveAbsence.Text = "حفظ";
-            this.saveAbsence.UseVisualStyleBackColor = false;
-            this.saveAbsence.Click += new System.EventHandler(this.saveAbsence_Click);
-            // 
             // ListBoxAbsence
             // 
+            this.ListBoxAbsence.Font = new System.Drawing.Font("Tahoma", 12F);
             this.ListBoxAbsence.FormattingEnabled = true;
-            this.ListBoxAbsence.Location = new System.Drawing.Point(217, 142);
-            this.ListBoxAbsence.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ListBoxAbsence.ItemHeight = 24;
+            this.ListBoxAbsence.Location = new System.Drawing.Point(217, 144);
             this.ListBoxAbsence.Name = "ListBoxAbsence";
-            this.ListBoxAbsence.Size = new System.Drawing.Size(299, 479);
-            this.ListBoxAbsence.TabIndex = 5;
+            this.ListBoxAbsence.Size = new System.Drawing.Size(302, 460);
+            this.ListBoxAbsence.Sorted = true;
+            this.ListBoxAbsence.TabIndex = 14;
+            this.ListBoxAbsence.SelectedIndexChanged += new System.EventHandler(this.ListBoxAbsence_SelectedIndexChanged_1);
             // 
             // label13
             // 
@@ -817,67 +916,309 @@
             this.comboBoxGroups.TabIndex = 0;
             this.comboBoxGroups.SelectedIndexChanged += new System.EventHandler(this.comboBoxGroups_SelectedIndexChanged);
             // 
-            // name
+            // student
             // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.FillWeight = 177.665F;
-            this.name.HeaderText = "الاسم";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
+            this.student.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.student.Controls.Add(this.btnStuSavetData);
+            this.student.Controls.Add(this.comboBoxStuGroup);
+            this.student.Controls.Add(this.label14);
+            this.student.Controls.Add(this.label15);
+            this.student.Controls.Add(this.textBoxStuAddress);
+            this.student.Controls.Add(this.textBoxStuAge);
+            this.student.Controls.Add(this.textBoxStuSchool);
+            this.student.Controls.Add(this.textBoxStuFatherPhone);
+            this.student.Controls.Add(this.textBoxStuPhone);
+            this.student.Controls.Add(this.textBoxStuName);
+            this.student.Controls.Add(this.label16);
+            this.student.Controls.Add(this.label17);
+            this.student.Controls.Add(this.label18);
+            this.student.Controls.Add(this.label19);
+            this.student.Controls.Add(this.label20);
+            this.student.ForeColor = System.Drawing.Color.Black;
+            this.student.Location = new System.Drawing.Point(4, 25);
+            this.student.Name = "student";
+            this.student.Padding = new System.Windows.Forms.Padding(3);
+            this.student.Size = new System.Drawing.Size(747, 636);
+            this.student.TabIndex = 5;
+            this.student.Text = "الطالب";
             // 
-            // age
+            // btnStuSavetData
             // 
-            this.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.age.FillWeight = 32.94267F;
-            this.age.HeaderText = "السن";
-            this.age.MinimumWidth = 6;
-            this.age.Name = "age";
-            this.age.ReadOnly = true;
+            this.btnStuSavetData.BackColor = System.Drawing.Color.White;
+            this.btnStuSavetData.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnStuSavetData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStuSavetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStuSavetData.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnStuSavetData.Location = new System.Drawing.Point(225, 505);
+            this.btnStuSavetData.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnStuSavetData.Name = "btnStuSavetData";
+            this.btnStuSavetData.Size = new System.Drawing.Size(161, 55);
+            this.btnStuSavetData.TabIndex = 69;
+            this.btnStuSavetData.Text = "حفظ";
+            this.btnStuSavetData.UseVisualStyleBackColor = false;
+            this.btnStuSavetData.Click += new System.EventHandler(this.btnStuSavetData_Click);
             // 
-            // school
+            // comboBoxStuGroup
             // 
-            this.school.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.school.FillWeight = 134.8481F;
-            this.school.HeaderText = "المدرسه";
-            this.school.MinimumWidth = 6;
-            this.school.Name = "school";
-            this.school.ReadOnly = true;
+            this.comboBoxStuGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBoxStuGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxStuGroup.FormattingEnabled = true;
+            this.comboBoxStuGroup.Location = new System.Drawing.Point(172, 435);
+            this.comboBoxStuGroup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxStuGroup.Name = "comboBoxStuGroup";
+            this.comboBoxStuGroup.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBoxStuGroup.Size = new System.Drawing.Size(268, 34);
+            this.comboBoxStuGroup.TabIndex = 68;
             // 
-            // Phone1
+            // label14
             // 
-            this.Phone1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Phone1.FillWeight = 77.86063F;
-            this.Phone1.HeaderText = "التليفون";
-            this.Phone1.MinimumWidth = 6;
-            this.Phone1.Name = "Phone1";
-            this.Phone1.ReadOnly = true;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(448, 432);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(81, 26);
+            this.label14.TabIndex = 67;
+            this.label14.Text = "المجموعه";
             // 
-            // Phone2
+            // label15
             // 
-            this.Phone2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Phone2.FillWeight = 83.55789F;
-            this.Phone2.HeaderText = "تليفون الوالد";
-            this.Phone2.MinimumWidth = 6;
-            this.Phone2.Name = "Phone2";
-            this.Phone2.ReadOnly = true;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(448, 384);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(62, 26);
+            this.label15.TabIndex = 66;
+            this.label15.Text = "العنوان";
             // 
-            // group
+            // textBoxStuAddress
             // 
-            this.group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.group.FillWeight = 149.8589F;
-            this.group.HeaderText = "المجموعه";
-            this.group.MinimumWidth = 6;
-            this.group.Name = "group";
-            this.group.ReadOnly = true;
+            this.textBoxStuAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuAddress.Location = new System.Drawing.Point(172, 380);
+            this.textBoxStuAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuAddress.Multiline = true;
+            this.textBoxStuAddress.Name = "textBoxStuAddress";
+            this.textBoxStuAddress.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuAddress.TabIndex = 65;
+            this.textBoxStuAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // absen
+            // textBoxStuAge
             // 
-            this.absen.HeaderText = "غ";
-            this.absen.MinimumWidth = 6;
-            this.absen.Name = "absen";
-            this.absen.ReadOnly = true;
-            this.absen.Width = 30;
+            this.textBoxStuAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuAge.Location = new System.Drawing.Point(172, 324);
+            this.textBoxStuAge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuAge.Multiline = true;
+            this.textBoxStuAge.Name = "textBoxStuAge";
+            this.textBoxStuAge.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuAge.TabIndex = 63;
+            this.textBoxStuAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxStuSchool
+            // 
+            this.textBoxStuSchool.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuSchool.Location = new System.Drawing.Point(172, 266);
+            this.textBoxStuSchool.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuSchool.Multiline = true;
+            this.textBoxStuSchool.Name = "textBoxStuSchool";
+            this.textBoxStuSchool.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuSchool.TabIndex = 61;
+            this.textBoxStuSchool.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxStuFatherPhone
+            // 
+            this.textBoxStuFatherPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuFatherPhone.Location = new System.Drawing.Point(172, 211);
+            this.textBoxStuFatherPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuFatherPhone.Multiline = true;
+            this.textBoxStuFatherPhone.Name = "textBoxStuFatherPhone";
+            this.textBoxStuFatherPhone.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuFatherPhone.TabIndex = 59;
+            this.textBoxStuFatherPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxStuPhone
+            // 
+            this.textBoxStuPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuPhone.Location = new System.Drawing.Point(172, 154);
+            this.textBoxStuPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuPhone.Multiline = true;
+            this.textBoxStuPhone.Name = "textBoxStuPhone";
+            this.textBoxStuPhone.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuPhone.TabIndex = 57;
+            this.textBoxStuPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxStuName
+            // 
+            this.textBoxStuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStuName.Location = new System.Drawing.Point(172, 96);
+            this.textBoxStuName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBoxStuName.Multiline = true;
+            this.textBoxStuName.Name = "textBoxStuName";
+            this.textBoxStuName.Size = new System.Drawing.Size(268, 37);
+            this.textBoxStuName.TabIndex = 55;
+            this.textBoxStuName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(448, 327);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(47, 26);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "السن";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(448, 270);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(70, 26);
+            this.label17.TabIndex = 62;
+            this.label17.Text = "المدرسه";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(448, 214);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(127, 26);
+            this.label18.TabIndex = 60;
+            this.label18.Text = "رقم تليفون الوالد";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(448, 158);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(95, 26);
+            this.label19.TabIndex = 58;
+            this.label19.Text = "رقم التليفون";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(448, 100);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(92, 26);
+            this.label20.TabIndex = 56;
+            this.label20.Text = "اسم الطالب";
+            // 
+            // studendRecord
+            // 
+            this.studendRecord.Controls.Add(this.dataGridViewStudentRecord);
+            this.studendRecord.Location = new System.Drawing.Point(4, 25);
+            this.studendRecord.Name = "studendRecord";
+            this.studendRecord.Padding = new System.Windows.Forms.Padding(3);
+            this.studendRecord.Size = new System.Drawing.Size(747, 636);
+            this.studendRecord.TabIndex = 6;
+            this.studendRecord.Text = "سجل الطالب";
+            this.studendRecord.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewStudentRecord
+            // 
+            this.dataGridViewStudentRecord.AllowUserToAddRows = false;
+            this.dataGridViewStudentRecord.AllowUserToDeleteRows = false;
+            this.dataGridViewStudentRecord.AllowUserToOrderColumns = true;
+            this.dataGridViewStudentRecord.AllowUserToResizeColumns = false;
+            this.dataGridViewStudentRecord.AllowUserToResizeRows = false;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewStudentRecord.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle71;
+            this.dataGridViewStudentRecord.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewStudentRecord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle72;
+            this.dataGridViewStudentRecord.ColumnHeadersHeight = 29;
+            this.dataGridViewStudentRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.Column1});
+            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle73.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle73.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewStudentRecord.DefaultCellStyle = dataGridViewCellStyle73;
+            this.dataGridViewStudentRecord.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewStudentRecord.Location = new System.Drawing.Point(4, 6);
+            this.dataGridViewStudentRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridViewStudentRecord.Name = "dataGridViewStudentRecord";
+            this.dataGridViewStudentRecord.ReadOnly = true;
+            this.dataGridViewStudentRecord.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle74.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewStudentRecord.RowHeadersDefaultCellStyle = dataGridViewCellStyle74;
+            this.dataGridViewStudentRecord.RowHeadersVisible = false;
+            this.dataGridViewStudentRecord.RowHeadersWidth = 51;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewStudentRecord.RowsDefaultCellStyle = dataGridViewCellStyle75;
+            this.dataGridViewStudentRecord.Size = new System.Drawing.Size(738, 625);
+            this.dataGridViewStudentRecord.TabIndex = 3;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.FillWeight = 95.40576F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "اليوم";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.FillWeight = 64.17112F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "الدرجه";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn6.FillWeight = 69.18202F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "الغياب";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.FillWeight = 171.2411F;
+            this.Column1.HeaderText = "ملحوظه";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Home
             // 
@@ -887,7 +1228,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1006, 661);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.marksBtn);
             this.Controls.Add(this.absenceBtn);
             this.Controls.Add(this.groupsBtn);
             this.Controls.Add(this.pictureBox4);
@@ -909,11 +1249,16 @@
             this.addStudent.ResumeLayout(false);
             this.addStudent.PerformLayout();
             this.students.ResumeLayout(false);
+            this.students.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewStudents)).EndInit();
             this.groups.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupsGridView)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.student.ResumeLayout(false);
+            this.student.PerformLayout();
+            this.studendRecord.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudentRecord)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -926,7 +1271,6 @@
         private System.Windows.Forms.Button groupsBtn;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button addGroupBtn;
-        private System.Windows.Forms.Button marksBtn;
         private System.Windows.Forms.Button absenceBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl;
@@ -960,23 +1304,47 @@
         private System.Windows.Forms.DataGridView gridViewStudents;
         private System.Windows.Forms.TabPage groups;
         private System.Windows.Forms.DataGridView groupsGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.CheckedListBox ListBoxAbsence;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBoxGroups;
-        private System.Windows.Forms.Button saveAbsence;
+        private System.Windows.Forms.TabPage student;
+        private System.Windows.Forms.Button btnStuSavetData;
+        private System.Windows.Forms.ComboBox comboBoxStuGroup;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBoxStuAddress;
+        private System.Windows.Forms.TextBox textBoxStuAge;
+        private System.Windows.Forms.TextBox textBoxStuSchool;
+        private System.Windows.Forms.TextBox textBoxStuFatherPhone;
+        private System.Windows.Forms.TextBox textBoxStuPhone;
+        private System.Windows.Forms.TextBox textBoxStuName;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBoxStudentsSearch;
+        private System.Windows.Forms.Button btnStudentsSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupCount;
+        private System.Windows.Forms.TabPage studendRecord;
+        private System.Windows.Forms.DataGridView dataGridViewStudentRecord;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn school;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone2;
         private System.Windows.Forms.DataGridViewTextBoxColumn group;
-        private System.Windows.Forms.DataGridViewTextBoxColumn absen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Absencee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn info;
+        private System.Windows.Forms.DataGridViewTextBoxColumn edit;
+        private System.Windows.Forms.ListBox ListBoxAbsence;
     }
 }
 
